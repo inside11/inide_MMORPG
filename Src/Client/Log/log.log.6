@@ -1,0 +1,53 @@
+2022-09-19 22:09:59,980 [ 1] INFO  Unity: LoadingManager start
+2022-09-19 22:10:03,634 [ 1] INFO  Unity: DataManager > DataManager()
+2022-09-19 22:10:14,610 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:1
+2022-09-19 22:10:14,618 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-09-19 22:10:14,620 [ 1] INFO  Unity: DoConnect
+2022-09-19 22:10:14,623 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-09-19 22:10:14,626 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2022-09-19 22:10:14,635 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-09-19 22:10:14,964 [ 1] INFO  Unity: OnLogin:Success [None]
+2022-09-19 22:10:14,970 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-09-19 22:10:15,300 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-09-19 22:10:18,046 [ 1] INFO  Unity: Select Char:[1]inside[Archer]
+2022-09-19 22:10:18,076 [ 1] INFO  Unity: SetPosition:(32351, -10900, 11992)
+2022-09-19 22:10:18,078 [ 1] INFO  Unity: MapEntityUpdateRequest : ID : 0   POS: (32351,-10900,11992)   DIR: (0,100,0)    SPD: 0
+2022-09-19 22:10:18,858 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2022-09-19 22:10:18,922 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-09-19 22:10:18,933 [ 1] INFO  Unity: ItemManager:Init[ID:1,   Count:2600]
+2022-09-19 22:10:18,934 [ 1] INFO  Unity: ItemManager:Init[ID:2,   Count:1300]
+2022-09-19 22:10:18,936 [ 1] INFO  Unity: ItemManager:Init[ID:3,   Count:390]
+2022-09-19 22:10:18,941 [ 1] INFO  Unity: ItemManager:Init[ID:4,   Count:1560]
+2022-09-19 22:18:37,817 [ 1] ERROR Unity: Message handler exception:, Array index is out of range., Assembly-CSharp,   at Managers.BagManager.Reset () [0x00096] in C:\Users\Administrator\Desktop\new_mmo\mymmo\Src\Client\Assets\Scripts\Managers\BagManager.cs:52 
+  at Managers.BagManager.Init (SkillBridge.Message.NBagInfo info) [0x00075] in C:\Users\Administrator\Desktop\new_mmo\mymmo\Src\Client\Assets\Scripts\Managers\BagManager.cs:33 
+  at Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00065] in C:\Users\Administrator\Desktop\new_mmo\mymmo\Src\Client\Assets\Scripts\Services\UserService.cs:246 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00044] in C:\Users\Administrator\Desktop\new_mmo\mymmo\Src\Lib\Common\Network\MessageDistributer.cs:105 
+2022-09-19 22:18:37,819 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{IndexOutOfRangeException: Array index is out of range., Managers.BagManager.Reset () (at Assets/Scripts/Managers/BagManager.cs:52)
+Managers.BagManager.Init (SkillBridge.Message.NBagInfo info) (at Assets/Scripts/Managers/BagManager.cs:33)
+Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:246)
+Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) (at C:/Users/Administrator/Desktop/new_mmo/mymmo/Src/Lib/Common/Network/MessageDistributer.cs:105)
+}</args></log4net.Error>
+2022-09-19 22:18:37,960 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
+  at Network.NetClient.ProcessRecv () [0x00084] in C:\Users\Administrator\Desktop\new_mmo\mymmo\Src\Client\Assets\Scripts\Network\NetClient.cs:338 
+
+2022-09-19 22:18:37,961 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:178)
+Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:352)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2022-09-19 22:18:38,062 [ 1] INFO  Unity: DoConnect
+2022-09-19 22:18:38,063 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-09-19 22:18:38,065 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2022-09-19 22:18:38,066 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-09-19 22:18:41,732 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-09-19 22:18:41,733 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:178)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:173)
+

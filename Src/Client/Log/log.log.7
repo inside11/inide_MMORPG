@@ -1,0 +1,67 @@
+2022-09-19 22:06:15,667 [ 1] INFO  Unity: LoadingManager start
+2022-09-19 22:06:19,483 [ 1] INFO  Unity: DataManager > DataManager()
+2022-09-19 22:06:25,731 [ 1] INFO  Unity: UserLoginRequest::user :user1 psw:1
+2022-09-19 22:06:25,743 [ 1] INFO  Unity: ConnectToServer() Start 
+2022-09-19 22:06:25,745 [ 1] INFO  Unity: DoConnect
+2022-09-19 22:06:25,747 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2022-09-19 22:06:25,750 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2022-09-19 22:06:25,761 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2022-09-19 22:06:26,146 [ 1] INFO  Unity: OnLogin:Success [None]
+2022-09-19 22:06:26,154 [ 1] INFO  Unity: LoadLevel: CharSelect
+2022-09-19 22:06:26,508 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-09-19 22:06:27,363 [ 1] INFO  Unity: Select Char:[1]inside[Archer]
+2022-09-19 22:06:27,394 [ 1] INFO  Unity: SetPosition:(32351, -10900, 11992)
+2022-09-19 22:06:27,395 [ 1] INFO  Unity: MapEntityUpdateRequest : ID : 0   POS: (32351,-10900,11992)   DIR: (0,100,0)    SPD: 0
+2022-09-19 22:06:28,295 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2022-09-19 22:06:28,368 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2022-09-19 22:06:28,381 [ 1] INFO  Unity: ItemManager:Init[ID:1,   Count:2400]
+2022-09-19 22:06:28,382 [ 1] INFO  Unity: ItemManager:Init[ID:2,   Count:1200]
+2022-09-19 22:06:28,384 [ 1] INFO  Unity: ItemManager:Init[ID:3,   Count:360]
+2022-09-19 22:06:28,388 [ 1] INFO  Unity: ItemManager:Init[ID:4,   Count:1440]
+2022-09-19 22:06:36,295 [ 1] ERROR Unity: Message handler exception:, Array index is out of range., Assembly-CSharp,   at Managers.BagManager.Reset () [0x00096] in C:\Users\Administrator\Desktop\new_mmo\mymmo\Src\Client\Assets\Scripts\Managers\BagManager.cs:52 
+  at Managers.BagManager.Init (SkillBridge.Message.NBagInfo info) [0x00075] in C:\Users\Administrator\Desktop\new_mmo\mymmo\Src\Client\Assets\Scripts\Managers\BagManager.cs:33 
+  at Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00065] in C:\Users\Administrator\Desktop\new_mmo\mymmo\Src\Client\Assets\Scripts\Services\UserService.cs:246 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00044] in C:\Users\Administrator\Desktop\new_mmo\mymmo\Src\Lib\Common\Network\MessageDistributer.cs:105 
+2022-09-19 22:06:36,300 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{IndexOutOfRangeException: Array index is out of range., Managers.BagManager.Reset () (at Assets/Scripts/Managers/BagManager.cs:52)
+Managers.BagManager.Init (SkillBridge.Message.NBagInfo info) (at Assets/Scripts/Managers/BagManager.cs:33)
+Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:246)
+Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) (at C:/Users/Administrator/Desktop/new_mmo/mymmo/Src/Lib/Common/Network/MessageDistributer.cs:105)
+}</args></log4net.Error>
+2022-09-19 22:06:36,375 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1    Count£º1
+2022-09-19 22:06:36,381 [ 1] INFO  Unity: AddCharacters:1:inside  Map:1 Entiyt:(6:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2022-09-19 22:06:36,396 [ 1] INFO  Unity: LoadLevel: MainCity
+2022-09-19 22:06:37,480 [ 1] WARN  Unity: MainPlayerCamera[-1287260] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2022-09-19 22:06:37,486 [ 1] WARN  Unity: UIWorldElementManager[155496] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2022-09-19 22:06:37,487 [ 1] WARN  Unity: UIMiniMap[155618] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2022-09-19 22:06:37,488 [ 1] WARN  Unity: DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+UnityEngine.Object:DontDestroyOnLoad(Object)
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:31)
+
+2022-09-19 22:06:37,489 [ 1] WARN  Unity: GameObjectManager[155966] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2022-09-19 22:06:37,513 [ 1] INFO  Unity: character.Info.Id = 1 , Models.User.Instance.CurrentCharacter.Id = 1
+2022-09-19 22:06:37,514 [ 1] WARN  Unity: UIMain[156366] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2022-09-19 22:06:37,570 [ 1] INFO  Unity: LevelLoadCompleted:1
+2022-09-19 22:09:49,906 [ 1] INFO  Unity: Character_1_inside OnDestroy :ID:6 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2022-09-19 22:09:49,910 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2022-09-19 22:09:49,912 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:178)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:173)
+
